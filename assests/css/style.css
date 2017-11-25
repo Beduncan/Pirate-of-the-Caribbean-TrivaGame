@@ -1,7 +1,8 @@
-body{
-	background: grey;
-	
+body {
+    background-image: url("../images/ship.jpg");
+    background-size:cover;
 }
+
 #header{
 	font-family:Bookman;
 	font-size: 60px;
@@ -9,12 +10,21 @@ body{
 	color: #a0522d;
 	background-color:black;
 	padding-bottom:50px;
+	margin-bottom: 100px;
 		}
 
 #start{
+	margin-top: 50px;
 	font-size: 40px;
+	font-weight: bold;
+	color: #808080;
 	width: 40%;
-	margin-top: 150px;
-	background-color: #808080;
-	border: 5px solid #a0522d;
+	background-color: black;
+	border: 5px solid #808080;
+}
+
+#content{
+	font-size: 40px;
+	color: white;
+	margin:20px;
 }
