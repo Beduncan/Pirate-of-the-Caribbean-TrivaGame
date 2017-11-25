@@ -1,0 +1,20 @@
+body{
+	background: grey;
+	
+}
+#header{
+	font-family:Bookman;
+	font-size: 60px;
+	padding-top: 30px;
+	color: #a0522d;
+	background-color:black;
+	padding-bottom:50px;
+		}
+
+#start{
+	font-size: 40px;
+	width: 40%;
+	margin-top: 150px;
+	background-color: #808080;
+	border: 5px solid #a0522d;
+}
