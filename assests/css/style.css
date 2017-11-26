@@ -22,9 +22,8 @@ body {
 	background-color: black;
 	border: 5px solid #808080;
 }
-
-#content{
+.content{
 	font-size: 40px;
 	color: white;
-	margin:20px;
+	margin-top:20px;
 }
