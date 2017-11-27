@@ -1,18 +1,8 @@
+/*first page*/
 body {
     background-image: url("../images/ship.jpg");
     background-size:cover;
 }
-
-#header{
-	font-family:Bookman;
-	font-size: 60px;
-	padding-top: 30px;
-	color: #a0522d;
-	background-color:black;
-	padding-bottom:50px;
-	margin-bottom: 100px;
-		}
-
 #start{
 	margin-top: 50px;
 	font-size: 40px;
@@ -22,8 +12,51 @@ body {
 	background-color: black;
 	border: 5px solid #808080;
 }
-.content{
+.page{
+	width:80%;
+	margin:0 auto;
+}
+
+#header{
+	text-align: center;
+	font-family:Bookman;
+	font-size: 60px;
+	padding-top: 30px;
+	color: #a0522d;
+	background-color:black;
+	padding-bottom:50px;
+	margin-bottom: 50px;
+		}
+#container{
+	height: auto;
+	background-color: grey;
+	background: rgba(225, 225 ,225, 0.5);
+}
+.time{
+	text-align: center;
 	font-size: 40px;
+	color: black;
+	margin:20px 0 20px 0;
+	border-bottom: 10px solid black;
+}
+.questions{
+	text-align: center;
+	font-size: 40px;
+	background: black;
+	border-radius: 20px;
 	color: white;
-	margin-top:20px;
+}
+.option{
+	font-size: 40px;
+	color: black;
+	width:40%;
+	display: inline-block;
+	vertical-align: middle;
+	padding:10px 0 10px 15px;
+	border: 5px solid black;
+	margin: 20px 10px 20px 0;
+}
+.option:hover{
+	background-color: black;
+	color: white;
 }
