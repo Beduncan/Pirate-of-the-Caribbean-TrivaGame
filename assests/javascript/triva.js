@@ -1,91 +1,74 @@
-$(document).ready(function(){
+$(document).ready(function(){});
 //adding var 
-	var myQuestion =[
+	var questions =[
 		{
-			question: "What kind of treasure does Barbossa crew steal?", 
-				answers:{ 
-					A: 'A fake one',
-					B: 'Lots of it',
-					C: 'A bottle of rum',
-					D: 'Aztec gold'
-				},
-			correctAnswer: "D"	
+			'question': "What kind of treasure does Barbossa crew steal?", 
+					'option1': 'A fake one',
+					'option2': 'Lots of it',
+					'option3': 'A bottle of rum',
+					'option4': 'Aztec gold',
+			'correctAnswer': "4"	
 		},
 		{	
-			question: "Why is Jack Sparrow in port royal?", 
-				answers:{
-					A: 'It’s a nice place', 
-					B: 'He is stuck there', 
-					C: 'He is trying to steal a ship', 
-					D: 'To find love',
-				},
-			correctAnswer: "C"	 
+			'question': "Why is Jack Sparrow in port royal?",
+					'option1': 'It is a nice place', 
+					'option2': 'He is stuck there', 
+					'option3': 'He is trying to steal a ship', 
+					'option4': 'To find love',
+			'correctAnswer': "3"	 
 		},
 		{	
-			question:"Why is the rum gone?", 
-				answers:{
-					A: 'Jack Drank it All ', 
-					B: 'It Got Dropped', 
-					C: 'Elizabeth Started a Signal', 
-					D: 'The Pirates Stole it All', 
-				},	
-			correctAnswer: 'C'
+			'question':"Why is the rum gone?", 
+					'option1': 'Jack Drank it All ', 
+					'option2': 'It Got Dropped', 
+					'option3': 'Elizabeth Started a Signal', 
+					'option4': 'The Pirates Stole it All', 
+			'correctAnswer': '3'
 		},
 		{
-			question:"Who was Will Tuners dad?", 
-				answers:{
-					A: 'Jack Sparrow', 
-					B: 'Bob Tuner', 
-					C: 'The BlackSmith', 
-					D: 'Bootstrap Bill',
-				},
-				correctAnswer: 'D'		
+			'question':"Who was Will Tuners dad?", 
+					'option1': 'Jack Sparrow', 
+					'option2': 'Bob Tuner', 
+					'option3': 'The BlackSmith', 
+					'option4': 'Bootstrap Bill',
+				'correctAnswer': '4'		
 		},
 		{	
-			question:"What’s the fastest ship in the Caribbean?",
-				answers:{
-					A: 'The Interceptor', 
-					B: 'The Black Peral', 
-					C: 'The Titanic', 
-					D: 'The Flying Dutchman', 
-				},
-			correctAnswer: 'B'
+			'question':"What’s the fastest ship in the Caribbean?",
+					'option1': 'The Interceptor', 
+					'option2': 'The Black Peral', 
+					'option3': 'The Titanic', 
+					'option4': 'The Flying Dutchman', 
+			'correctAnswer': '2'
 		},		
 		{	
-			question:"How many pieces of 8 are there?",
-				answers:{
-					A: '9', 
-					B: '3', 
-					C: '8',
-					D: '6', 
-				},
-			correctAnswer: 'A'
+			'question':"How many pieces of 8 are there?",
+					'option1': '9', 
+					'option2': '3', 
+					'option3': '8',
+					'option4': '6', 
+			'correctAnswer': '1'
 		},
 		{
-			question:"Which way does Jack Sparrows campus not point?",
-				answers:{
-					A: 'Home', 
-					B: 'North', 
-					C: 'West', 
-					D:'East', 
-				},
-			correctAnswer: 'B'
+			'question' :"Which way does Jack Sparrows campus not point?",
+					'option1': 'Home', 
+					'option2': 'North', 
+					'option3': 'West', 
+					'option4':'East', 
+			'correctAnswer': '2'
 		},	
 		{
-			question:"What is the name of captain Barbossa monkey?",
-				answers:{
-					A: 'Monkey', 
-					B: 'Killer', 
-					C: 'Larry', 
-					D: "Jack", 
-				},
-			correctAnswer:'D'
+			'question':"What is the name of captain Barbossa monkey?",
+					'option1': 'Monkey', 
+					'option2': 'Killer', 
+					'option3': 'Larry', 
+					'option4': "Jack", 
+			'correctAnswer':'4'
 		}
 	];
 	var currentQ =0;
 	var score = 0;
-	var TotalQ = myQuestion.length;
-
+	var TotalQ = questions.length;
 
 //getting from html
 	var container = $('#container');
@@ -96,16 +79,16 @@ $(document).ready(function(){
 	var opt4 = $('#opt4');
 
 //starting functions
-	//picking random question
-	//function ran(){
-	//	pickedQ = myQuestion[Math.floor(Math.random()*myQuestion.length)];
-	//	console.log(pickedQ);
-	//}
-	//showing question and answers
-	
+function loadquestion(questionIndex){
+	var q = questions[questionIndex];
+	questionEl.textContent = (questionIndex + 1) + '. ' + q.question;
+	opt1.textContent = q.option1;
+	opt2.textContent = q.option2;
+	opt3.textContent = q.option3;
+	opt4.textContent = q.option4;
 
-//ran();
-
+	}
+		
+loadquestion();
 
 //closing ready
-});
