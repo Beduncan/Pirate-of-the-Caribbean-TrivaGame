@@ -1,8 +1,9 @@
 $(document).ready(function(){
 //adding var
-var Correct = 0
-var Wrong = 0
-var NotAnswered = 0 
+ var Correct= 0;
+ var Wrong= 0;
+ var NotAnswered= 0;
+console.log(NotAnswered);
 console.log(Correct);
 console.log(Wrong);
 
@@ -10,9 +11,18 @@ console.log(Wrong);
 var timeleft = 3;
 var timerId = setInterval(countdown, 1000);
 function countdown(){
-	if(timeleft == -1){
+	if(timeleft == -1){		
 		clearInterval(timerId);
-		check();
+		
+		var C = $("<div>");
+        	C = ("Correct:" +Correct+"	");
+			$("#container").prepend(C);
+		var w = $("<div>");
+			w = ("Wrong:" +Wrong+"	");
+			$("#container").prepend(w);
+		var n =$("<div>");
+		n = ("NotAnswered:"+NotAnswered+"	")
+		$("#container").prepend(n);
 	}
 	else{
 		$(".time").html(timeleft + ' Seconds Remaining');
@@ -21,15 +31,14 @@ function countdown(){
 }
 countdown();
 function check(){
-	var Question1 = document.getElementsByTagName('Q1');
-	console.log(Question1);
+	var checker = $("").val();
+	console.log(checker);
 
-	if(Question1 == "Aztec Gold"){
-		Correct++;
-	}
-	else{Wrong++;}
-
-
+	//if(Question1 == "Aztec Gold"){
+	//	Correct++;
+	//}
+	//else{Wrong++;}
 }
+check();
 //closing ready
 });

@@ -1,4 +1,6 @@
-/*first page*/
+*{
+	padding:10px;
+}
 body {
     background-image: url("../images/ship.jpg");
     background-size:cover;
@@ -31,6 +33,8 @@ body {
 	height: auto;
 	background-color: grey;
 	background: rgba(225, 225 ,225, 0.5);
+	font-size: 40px;
+	color: white;
 }
 .time{
 	text-align: center;
