@@ -47,14 +47,14 @@ body {
 	color: white;
 }
 .option{
+	text-align: center;
 	font-size: 40px;
 	color: black;
 	width:40%;
 	display: inline-block;
-	vertical-align: middle;
 	padding:10px 0 10px 15px;
 	border: 5px solid black;
-	margin: 20px 10px 20px 0;
+	margin: 20px 20px 20px 60px;
 }
 .option:hover{
 	background-color: black;
