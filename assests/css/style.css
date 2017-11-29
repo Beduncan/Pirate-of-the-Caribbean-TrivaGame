@@ -1,5 +1,5 @@
 *{
-	padding:10px;
+	text-align: center;
 }
 body {
     background-image: url("../images/ship.jpg");
@@ -20,7 +20,6 @@ body {
 }
 
 #header{
-	text-align: center;
 	font-family:Bookman;
 	font-size: 60px;
 	padding-top: 30px;
@@ -37,21 +36,18 @@ body {
 	color: white;
 }
 .time{
-	text-align: center;
 	font-size: 40px;
-	color: black;
+	color: white;
 	margin:20px 0 20px 0;
 	border-bottom: 10px solid black;
 }
 .questions{
-	text-align: center;
 	font-size: 40px;
 	background: black;
 	border-radius: 20px;
 	color: white;
 }
 .option{
-	text-align: center;
 	font-size: 40px;
 	color: black;
 	width:40%;

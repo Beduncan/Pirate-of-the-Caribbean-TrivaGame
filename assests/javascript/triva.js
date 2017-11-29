@@ -13,16 +13,16 @@ var timerId = setInterval(countdown, 1000);
 function countdown(){
 	if(timeleft == -1){		
 		clearInterval(timerId);
-		
+		check();
 		var C = $("<div>");
-        	C = ("Correct:" +Correct+"	");
+        	C = ("Correct: " +Correct+"	");
 			$("#container").prepend(C);
 		var w = $("<div>");
-			w = ("Wrong:" +Wrong+"	");
+			w = ("Wrong: " +Wrong+"	|	");
 			$("#container").prepend(w);
 		var n =$("<div>");
-		n = ("NotAnswered:"+NotAnswered+"	")
-		$("#container").prepend(n);
+			n = ("Not Answered: "+NotAnswered+"	|	")
+			$("#container").prepend(n);
 	}
 	else{
 		$(".time").html(timeleft + ' Seconds Remaining');
@@ -31,14 +31,21 @@ function countdown(){
 }
 countdown();
 function check(){
-	var checker = $("").val();
-	console.log(checker);
-
-	//if(Question1 == "Aztec Gold"){
-	//	Correct++;
-	//}
-	//else{Wrong++;}
+	var question1 = $("input[name='Q1']:checked").val();
+		console.log(question1);
+	if(question1 == 1){
+		Correct++;
+	}else{
+		Wrong++;
+	}
+	var question2 = $("input[name='Q2']:checked").val();
+		console.log(question2);
+	if(question2 == 1){
+		Correct++;
+	}else{
+		Wrong++;
+	}
 }
-check();
+
 //closing ready
 });
