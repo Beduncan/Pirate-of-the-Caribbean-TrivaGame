@@ -1,5 +1,7 @@
 *{
 	text-align: center;
+	font-size: 40px;
+	color:white;
 }
 body {
     background-image: url("../images/ship.jpg");
@@ -7,7 +9,6 @@ body {
 }
 #start{
 	margin-top: 50px;
-	font-size: 40px;
 	font-weight: bold;
 	color: #808080;
 	width: 40%;
@@ -32,23 +33,16 @@ body {
 	height: auto;
 	background-color: grey;
 	background: rgba(225, 225 ,225, 0.5);
-	font-size: 40px;
-	color: white;
 }
 .time{
-	font-size: 40px;
-	color: white;
 	margin:20px 0 20px 0;
 	border-bottom: 10px solid black;
 }
 .questions{
-	font-size: 40px;
 	background: black;
 	border-radius: 20px;
-	color: white;
-}
+	}
 .option{
-	font-size: 40px;
 	color: black;
 	width:40%;
 	display: inline-block;
@@ -59,4 +53,7 @@ body {
 .option:hover{
 	background-color: black;
 	color: white;
+}
+.wrong{
+	background-color: red;
 }
