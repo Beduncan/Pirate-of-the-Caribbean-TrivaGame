@@ -8,28 +8,27 @@ console.log(Correct);
 console.log(Wrong);
 //making timer
 //time left 
-var timeleft = 5;
+var timeleft = 60;
 var timerId = setInterval(countdown, 1000);
 function countdown(){
 	//what happen when timer hits 0 
 	if(timeleft == 0){		
 		clearInterval(timerId);
 		check();
-		showW();
-		//making places from the divs to go with the grades
-		var C = $("<div>");
-        	C = ("Correct: " +Correct+"	");
-			$("#container").prepend(C);
-		var w = $("<div>");
-			w = ("Wrong: " +Wrong+"	|	");
-			$("#container").prepend(w);
-		var n =$("<div>");
-			n = ("Not Answered: "+NotAnswered+"	|	")
-			$("#container").prepend(n);
+		//clearing questions and showing grades
+		$(".time").empty();
+			var done = "All Done!!"
+			$(".done").append(done);
+		   	var C = ("Correct: " +Correct);
+			$(".correct").append(C);
+			var w = ("Wrong: " +Wrong);
+			$(".wrong").append(w);
+			var n = ("Not Answered: "+NotAnswered)
+			$(".na").append(n);
 	}
 	//if not keep going don by 1
 	else{
-		$(".time").html(timeleft + ' Seconds Remaining');
+		$(".time").html("time left: " +timeleft);
 		timeleft--;
 	}
 }
@@ -108,78 +107,6 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
-}
-//shwoing whcih are wrong
-function showW(){
-	//if input is equal to two it is wrong change to red
-	var qu1 = $("input[name='Q1']:checked").val();
-	if (qu1 == 2)
-		{
-			console.log("wrong");
-
-		}else{
-			console.log("right");
-		} 	
-	var qu2 = $("input[name='Q2']:checked").val();
-	if (qu2 == 2)
-		{
-			console.log("wrong");
-
-		}else{
-			console.log("right");
-		} 	
-	var qu3 = $("input[name='Q3']:checked").val();
-	if (qu3 == 2)
-		{
-			console.log("wrong");
-
-		}else{
-			console.log("right");
-		} 	
-	var qu4 = $("input[name='Q4']:checked").val();
-	if (qu4 == 2)
-		{
-			console.log("wrong");
-
-		}else{
-			console.log("right");
-		} 	
-	var qu5 = $("input[name='Q5']:checked").val();
-	if (qu5 == 2)
-		{
-			console.log("wrong");
-
-		}else{
-			console.log("right");
-		} 
-	var qu6 = $("input[name='Q6']:checked").val();
-	if (qu6 == 2)
-		{
-			console.log("wrong");
-
-		}else{
-			console.log("right");
-		} 	
-	var qu7 = $("input[name='Q7']:checked").val();
-	if (qu7 == 2)
-		{
-			console.log("wrong");
-
-		}else{
-			console.log("right");
-		} 
-	var qu8 = $("input[name='Q8']:checked").val();
-	if (qu8 == 2)
-		{
-			console.log("wrong");
-
-		}else{
-			console.log("right");
-		} 
-		
-	
-}
-
-//showing which are right 
+} 
 //closing ready
 });
