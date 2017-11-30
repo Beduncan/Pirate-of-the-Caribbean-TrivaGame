@@ -12,11 +12,11 @@ var timeleft = 60;
 var timerId = setInterval(countdown, 1000);
 function countdown(){
 	//what happen when timer hits 0 
-	if(timeleft == 0){		
+	if(timeleft == -1){		
 		clearInterval(timerId);
 		check();
 		//clearing questions and showing grades
-		$(".time").empty();
+		$("#content").empty();
 			var done = "All Done!!"
 			$(".done").append(done);
 		   	var C = ("Correct: " +Correct);
@@ -40,7 +40,7 @@ function check(){
 	if(question1 == 1){
 		Correct++;
 	}
-	if(question1 == 2) {
+	else if(question1 == 2) {
 		Wrong++;
 	}else{
 		NotAnswered++;
@@ -49,7 +49,7 @@ function check(){
 	if(question2 == 1){
 		Correct++;
 	}
-	if(question2 == 2) {
+	else if(question2 == 2) {
 		Wrong++;
 	}else{
 		NotAnswered++;
@@ -58,7 +58,7 @@ function check(){
 	if(question3 == 1){
 		Correct++;
 	}
-	if(question3 == 2) {
+	else if(question3 == 2) {
 		Wrong++;
 	}else{
 		NotAnswered++;
@@ -66,7 +66,8 @@ function check(){
 	var question4 = $("input[name='Q4']:checked").val();
 	if(question4 == 1){
 		Correct++;
-	}if(question4 == 2) {
+	}
+	else if(question4 == 2) {
 		Wrong++;
 	}else{
 		NotAnswered++;
@@ -75,7 +76,7 @@ function check(){
 	if(question5 == 1){
 		Correct++;
 	}
-	if(question5 == 2) {
+	else if(question5 == 2) {
 		Wrong++;
 	}else{
 		NotAnswered++;
@@ -84,7 +85,7 @@ function check(){
 	if(question6 == 1){
 		Correct++;
 	}
-	if(question6 == 2) {
+	 else if(question6 == 2) {
 		Wrong++;
 	}else{
 		NotAnswered++;
@@ -93,7 +94,7 @@ function check(){
 	if(question7 == 1){
 		Correct++;
 	}
-	if(question7 == 2) {
+	else if(question7 == 2) {
 		Wrong++;
 	}else{
 		NotAnswered++;
@@ -102,7 +103,7 @@ function check(){
 	if(question8 == 1){
 		Correct++;
 	}
-	if(question8 == 2) {
+	else if(question8 == 2) {
 		Wrong++;
 	}else{
 		NotAnswered++;
