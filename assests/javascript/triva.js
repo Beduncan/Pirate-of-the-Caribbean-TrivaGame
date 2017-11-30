@@ -108,6 +108,42 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	var question9 = $("input[name='Q9']:checked").val();
+	if(question9 == 1){
+		Correct++;
+	}
+	else if(question9 == 2) {
+		Wrong++;
+	}else{
+		NotAnswered++;
+	}
+	var question10 = $("input[name='Q10']:checked").val();
+	if(question10 == 1){
+		Correct++;
+	}
+	else if(question10 == 2) {
+		Wrong++;
+	}else{
+		NotAnswered++;
+	}
+	var question11 = $("input[name='Q11']:checked").val();
+	if(question11 == 1){
+		Correct++;
+	}
+	else if(question11 == 2) {
+		Wrong++;
+	}else{
+		NotAnswered++;
+	}
+	var question12 = $("input[name='Q12']:checked").val();
+	if(question12 == 1){
+		Correct++;
+	}
+	else if(question12 == 2) {
+		Wrong++;
+	}else{
+		NotAnswered++;
+	}
 } 
 //closing ready
 });
