@@ -35,7 +35,8 @@ function countdown(){
 countdown();
 //checking if answer is right wrong or not answered 
 function check(){
-	//if input checked is equal to 0 add to correct if not add to wrong mde that fo every question
+	//if input checked is equal to 0 add to correct if not add to wrong array. do that for every question
+	//question 1 
 	var question1 = $("input[name='Q1']:checked").val();
 	if(question1 == 1){
 		Correct++;
@@ -45,6 +46,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	//  question 2
 	var question2 = $("input[name='Q2']:checked").val();
 	if(question2 == 1){
 		Correct++;
@@ -54,6 +56,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	// quesion 3
 	var question3 = $("input[name='Q3']:checked").val();
 	if(question3 == 1){
 		Correct++;
@@ -63,6 +66,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	//question 4
 	var question4 = $("input[name='Q4']:checked").val();
 	if(question4 == 1){
 		Correct++;
@@ -72,6 +76,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	//quesion 5
 	var question5 = $("input[name='Q5']:checked").val();
 	if(question5 == 1){
 		Correct++;
@@ -81,6 +86,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	//question 6
 	var question6 = $("input[name='Q6']:checked").val();
 	if(question6 == 1){
 		Correct++;
@@ -90,6 +96,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	//quesion 7
 	var question7 = $("input[name='Q7']:checked").val();
 	if(question7 == 1){
 		Correct++;
@@ -99,6 +106,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	//question 8
 	var question8 = $("input[name='Q8']:checked").val();
 	if(question8 == 1){
 		Correct++;
@@ -108,6 +116,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	// question 9
 	var question9 = $("input[name='Q9']:checked").val();
 	if(question9 == 1){
 		Correct++;
@@ -117,6 +126,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	//question 10
 	var question10 = $("input[name='Q10']:checked").val();
 	if(question10 == 1){
 		Correct++;
@@ -126,6 +136,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	// question 11
 	var question11 = $("input[name='Q11']:checked").val();
 	if(question11 == 1){
 		Correct++;
@@ -135,6 +146,7 @@ function check(){
 	}else{
 		NotAnswered++;
 	}
+	//quesion 12
 	var question12 = $("input[name='Q12']:checked").val();
 	if(question12 == 1){
 		Correct++;
